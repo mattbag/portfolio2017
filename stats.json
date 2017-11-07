@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-3525934576467f1fd03a.js",
+      "component---src-pages-index-js-3525934576467f1fd03a.js.map"
+    ],
+    "path---projects-nothotdog": [
+      "path---projects-nothotdog-6e4c528b26be0eca54d0.js",
+      "path---projects-nothotdog-6e4c528b26be0eca54d0.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---projects-tinderwarsionic": [
+      "path---projects-tinderwarsionic-7b44871682ac604222c1.js",
+      "path---projects-tinderwarsionic-7b44871682ac604222c1.js.map"
+    ],
+    "path---projects-hooli": [
+      "path---projects-hooli-ee0cca567e88234dae01.js",
+      "path---projects-hooli-ee0cca567e88234dae01.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-project-js": [
+      "component---src-templates-project-js-1eaf157ca33da2443eed.js",
+      "component---src-templates-project-js-1eaf157ca33da2443eed.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ca2a5fb252014282872c.js",
+      "component---src-layouts-index-js-ca2a5fb252014282872c.js.map"
+    ],
+    "path---projects-aviato": [
+      "path---projects-aviato-fc3f6567d293ffb9db10.js",
+      "path---projects-aviato-fc3f6567d293ffb9db10.js.map"
+    ],
+    "path---projects-easyshirt-it": [
+      "path---projects-easyshirt-it-353f9c9b9351c9a64a61.js",
+      "path---projects-easyshirt-it-353f9c9b9351c9a64a61.js.map"
+    ],
+    "path---index": [
+      "path---index-39e43f319898851fbf08.js",
+      "path---index-39e43f319898851fbf08.js.map"
+    ],
+    "path---projects-piedpiper": [
+      "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js",
+      "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js.map"
+    ],
+    "commons": [
+      "commons-c98b01152894ae2b67c3.js",
+      "build-js-styles.css",
+      "commons-c98b01152894ae2b67c3.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---projects-nipalert": [
+      "path---projects-nipalert-f831dbdaea10928821b5.js",
+      "path---projects-nipalert-f831dbdaea10928821b5.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js",
+      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js.map"
+    ],
+    "app": [
+      "app-dfda5b5ec7f2c2a6ab19.js",
+      "build-js-styles.css",
+      "app-dfda5b5ec7f2c2a6ab19.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---projects-superdooper": [
+      "path---projects-superdooper-fb9b135edc7115bdd5e4.js",
+      "path---projects-superdooper-fb9b135edc7115bdd5e4.js.map"
+    ]
+  }
+}
