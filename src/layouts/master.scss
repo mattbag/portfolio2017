@@ -1,0 +1,26 @@
+html{
+    min-height: 100%;
+    background-color: #111;
+    // border: 1rem solid #111;
+}
+body{
+    // background: rgba(68,114,221,.78);  /* fallback for old browsers */
+    // background: linear-gradient(135deg,#282424,rgba(68,114,221,.78));
+    min-height: 100vh;
+   
+}
+
+.gatsby-resp-image-link{
+    box-shadow: none !important;
+}
+.gatsby-resp-image-wrapper{
+    z-index: auto !important;
+}
+blockquote{
+    margin-left: 0;
+    padding-left: 1rem;
+    border-left: 4px solid #fff;
+}
+a:hover{
+    text-shadow: .5px .5px #80ff5c
+}
