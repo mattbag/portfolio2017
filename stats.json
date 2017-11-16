@@ -1,0 +1,68 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-3f74306139b3b0eb7556.js",
+      "component---src-pages-index-js-3f74306139b3b0eb7556.js.map"
+    ],
+    "path---projects-nothotdog": [
+      "path---projects-nothotdog-6e4c528b26be0eca54d0.js",
+      "path---projects-nothotdog-6e4c528b26be0eca54d0.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---projects-hooli": [
+      "path---projects-hooli-ee0cca567e88234dae01.js",
+      "path---projects-hooli-ee0cca567e88234dae01.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-project-js": [
+      "component---src-templates-project-js-9c0a1a4d9fb99663db6c.js",
+      "component---src-templates-project-js-9c0a1a4d9fb99663db6c.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-a5a87efd6e7a17f64b7a.js",
+      "component---src-layouts-index-js-a5a87efd6e7a17f64b7a.js.map"
+    ],
+    "path---projects-aviato": [
+      "path---projects-aviato-fc3f6567d293ffb9db10.js",
+      "path---projects-aviato-fc3f6567d293ffb9db10.js.map"
+    ],
+    "path---index": [
+      "path---index-69028fba06fdd7b31304.js",
+      "path---index-69028fba06fdd7b31304.js.map"
+    ],
+    "path---projects-piedpiper": [
+      "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js",
+      "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js.map"
+    ],
+    "commons": [
+      "commons-c98b01152894ae2b67c3.js",
+      "build-js-styles.css",
+      "commons-c98b01152894ae2b67c3.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---projects-nipalert": [
+      "path---projects-nipalert-f831dbdaea10928821b5.js",
+      "path---projects-nipalert-f831dbdaea10928821b5.js.map"
+    ],
+    "path---projects-justjump": [
+      "path---projects-justjump-36af67f4f08f83c10fd6.js",
+      "path---projects-justjump-36af67f4f08f83c10fd6.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js",
+      "path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js.map"
+    ],
+    "app": [
+      "app-02ad652374bac5773281.js",
+      "build-js-styles.css",
+      "app-02ad652374bac5773281.js.map",
+      "build-js-styles.css.map"
+    ]
+  }
+}
