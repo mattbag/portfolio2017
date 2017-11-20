@@ -1,12 +1,3 @@
-language: node_js
-node_js:
-  - 8
-before_script:
-  - echo 'start'
-script:
-  - npm run build
-after_success:
-  - echo 'done'
 deploy:
   provider: pages
   skip_cleanup: true
