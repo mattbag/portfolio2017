@@ -16,7 +16,7 @@ class DefaultLayout extends React.Component {
   render() {
     const { location } = this.props
     let headerText
-    if (location.pathname === '/' || location.pathname === '/portfolio2017') {
+    if (location.pathname === '/' || location.pathname === '/portfolio2017' || location.pathname === '/portfolio2017/') {
       headerText = "I'm Matt, a Progressive Front-end Dev"
     }
 

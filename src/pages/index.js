@@ -6,9 +6,10 @@ import Img from "gatsby-image"
 import Helmet from "react-helmet";
 import './grid.scss'
 import Tile from "./../components/tile/Tile";
-import TileEmpty from "./../components/tile/TileEmpty";
+// import TileEmpty from "./../components/tile/TileEmpty";
 import Builtwith from "./../components/builtwith/Builtwith";
 import logo from './../components/bio/face.png'
+
 const startY = 20;
 
 const propTypes = {
@@ -74,7 +75,7 @@ class IndexPage extends React.Component {
     if (this.state.isMob) { return }
     let dums = []
     for (var index = 0; index < len; index++) {
-      dums.push(<TileEmpty key={index} />)
+      dums.push(<Tile key={index} />)
     }
     return dums
   }

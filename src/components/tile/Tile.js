@@ -3,8 +3,8 @@ import Link from "gatsby-link"
 import Img from 'gatsby-image'
 import "./tile.scss"
 import wf from './../../img/wf.png'
-
-// import { rhythm } from '../utils/typography'
+import oo from './../../img/oo.png'
+import { _rand } from '../../utils/_utils'
 
 class Tile extends React.Component {
   constructor() {
@@ -26,15 +26,15 @@ class Tile extends React.Component {
   //   })
   //   console.log(this.state)
   // }
-  _rand(min, max) {
-    return Math.floor(Math.random() * max) + min
-  }
+  // _rand(min, max) {
+  //   return Math.floor(Math.random() * max) + min
+  // }
   _mouseEnter() {
     this.setState({
       lift: 'lift',
-      lv1: `matrix3d(0.999848, ${this._rand(-10, 10) / 100}, 0, 0, 0.0${this._rand(10, 20)}, 0.999848, 0, 0, 0, 0, 1, 0, 0, 0, 150, 1)`,
-      lv2: `matrix3d(0.999391, 0.0${this._rand(25, 40)}, 0, 0, 0.0${this._rand(25, 40)}, 0.999391, 0, 0, 0, 0, 1, 0, 0, 0, 100, 1)`,
-      lv3: `matrix3d(0.999848, 0.0${this._rand(17, 40)}, 0, 0, 0.0${this._rand(17, 40)}, 0.999848, 0, 0, 0, 0, 1, 0, 0, 0, 30, 1)`
+      lv1: `matrix3d(0.999848, ${_rand(-10, 10) / 100}, 0, 0, 0.0${_rand(10, 20)}, 0.999848, 0, 0, 0, 0, 1, 0, 0, 0, 150, 1)`,
+      lv2: `matrix3d(0.999391, 0.0${_rand(25, 40)}, 0, 0, 0.0${_rand(25, 40)}, 0.999391, 0, 0, 0, 0, 1, 0, 0, 0, 100, 1)`,
+      lv3: `matrix3d(0.999848, 0.0${_rand(17, 40)}, 0, 0, 0.0${_rand(17, 40)}, 0.999848, 0, 0, 0, 0, 1, 0, 0, 0, 30, 1)`
     })
   }
   _mouseLeave() {
@@ -47,37 +47,54 @@ class Tile extends React.Component {
 
   render() {
     // console.log(this.props.project.node);
-    const _p = this.props.project.node
-    console.log('tile render alert')
-    const tileInner = (
-      <span>
-        <img src={_p.heroImage.resize.src} alt={_p.projectName}
-          style={{ transform: this.state.lv1 }} />
-        <img src={wf} alt={_p.projectName}
-          style={{ transform: this.state.lv2 }} />
-        <img src={wf} alt={_p.projectName}
-          style={{ transform: this.state.lv3, opacity: .7 }} />
-        <div className="tile__title">{_p.projectName}</div>
-      </span>
-    )
+    const _post = this.props.project || false
+    const _p = _post.node
+    // console.log(this.props.project)
+    let tileInner;
+    if (!_post) {
+      tileInner = (
+        <span style={{position:`absolute`, top:0, left:0, right:0}}>
+          <img src={wf} alt={`Coming Soon`}
+            style={{ transform: this.state.lv1 }} />
+          <img src={wf} alt={`Coming Soon`}
+            style={{ transform: this.state.lv2 , opacity: `.9` }} />
+          <img src={oo} alt={`Coming Soon`}
+            style={{ transform: this.state.lv3,opacity: `.7` }} />
+          <div className="tile__title">{`Coming Soon`}</div>
+        </span>
+      )
+    }else{
+       tileInner = (
+        <span>
+          <img src={_p.heroImage.resize.src} alt={_p.projectName}
+            style={{ transform: this.state.lv1 }} />
+          <img src={wf} alt={_p.projectName}
+            style={{ transform: this.state.lv2 }} />
+          <img src={wf} alt={_p.projectName}
+            style={{ transform: this.state.lv3, opacity: .7 }} />
+          <div className="tile__title">{_p.projectName}</div>
+        </span>
+      )
+    }
 
     let link
-    if (_p.projectLink) {
+    if (_p && _p.projectLink) {
       link = (
         <a href={_p.projectLink} target="_blank">
           {tileInner}
         </a>
       )
+    } else if(_p) {
+        const slug = _p.projectName.toString().replace(' ', '').toLowerCase()
+        link = (
+          <Link to={`/projects/${slug}`} style={{
+            boxShadow: 'none'
+          }}>
+            {tileInner}
+          </Link>
+        )
     } else {
-      const slug = _p.projectName.toString().replace(' ', '').toLowerCase()
-      link = (
-        <Link to={`/projects/${slug}`} style={{
-          boxShadow: 'none'
-        }}>
-          {tileInner}
-        </Link>
-
-      )
+     link = tileInner
     }
     return (
 
