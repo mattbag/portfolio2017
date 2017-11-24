@@ -53,6 +53,7 @@
     }
   
     $shadow: rgba(4, 128, 255, 0.82);
+    $shadow-over:rgb(255, 247, 4);
     /* Shadow effect */
     &:before {
         content: '';
@@ -60,7 +61,7 @@
         z-index: -1;
         top: 5px;
         right: 1px;
-        bottom: 20px;
+        bottom: 1rem;
         left: 1px;
         opacity: 0.5;
         background: $shadow;
@@ -78,7 +79,8 @@
         font-weight: bold;
         color: #FFFFFF; // font-size: 2rem;
         @include fp(font-size, 16, 30); //50px at 320, 100px at 1920;
-        text-shadow:1px 1px rgba(0, 0, 0, 0.82);
+        // text-shadow:1px 1px rgba(0, 0, 0, 0.82);
+        text-shadow: rgb(46, 142, 222) 2px 2px;
     }
     &:hover {
         .tile__title {
@@ -87,9 +89,9 @@
         }
         &::before {
             opacity: 0.25;
-            // box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.8);
-            // box-shadow:0 0 20px 10px rgba(73, 158, 246, 0.82);
             transform: scale(.95);
+            // background: $shadow-over;
+            // box-shadow:0 0 20px 10px $shadow-over;
         }
     }
 }

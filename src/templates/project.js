@@ -42,8 +42,8 @@ class ProjectTemplate extends React.Component {
           <h1 style={{
             position: `relative`,
             fontSize: '7vw',
-            color: '#222',
-            textShadow: `4px 4px #efefef`
+            color: '#fff',
+            textShadow: `rgb(46, 142, 222) 4px 4px`
           }}>{projectName}</h1>
 
           {category &&
