@@ -47,9 +47,9 @@ class IndexPage extends React.Component {
       window.addEventListener('resize', () => {
         this.getHeight()
       });
-    } 
+    }
     this.setState({ isMob: !_isMobOnMount })
-    setTimeout(() => {  this.setState({ gridIn: true }) }, 500);
+    setTimeout(() => { this.setState({ gridIn: true }) }, 500);
     // console.log(this.state)
   }
 
@@ -68,7 +68,7 @@ class IndexPage extends React.Component {
     // console.log(document.querySelector('.grid'))
   }
   createScroller() {
-      return (<div ref={el => {this.gridScroller = el}} className="grid__scroll" style={{ height: this.state.gridHeight }}></div>)
+    return (<div ref={el => { this.gridScroller = el }} className="grid__scroll" style={{ height: this.state.gridHeight }}></div>)
   }
   renderDummy(len) {
     // console.log(this.state.isMob)
@@ -133,6 +133,16 @@ export const pageQuery = graphql`
             resize(width: 400, height: 300, quality: 100) {
               src
             }
+          }
+          category {
+            icon {
+              file{
+                url
+              }
+            }
+                title {
+                  title
+                }
           }
         }
       }

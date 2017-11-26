@@ -16,7 +16,7 @@
     }
     @media screen and (min-width: 1200px) {
         width: 30%;
-        padding-bottom: 25%;
+        padding-bottom: 28%;
         // margin-bottom: 3rem;
     }
     a{
@@ -58,7 +58,7 @@
         z-index: -1;
         top: 5px;
         right: 1px;
-        bottom: .8rem;
+        bottom: 40px;
         left: 1px;
         opacity: 0.5;
         background: $shadow;
@@ -70,7 +70,7 @@
   
     &__title {
         text-align: center;
-        transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -300%, 0);
         transition: all .25s .15s ease;
         font-family: 'Lobster', serif;
         font-weight: bold;
@@ -79,10 +79,17 @@
         // text-shadow:1px 1px rgba(0, 0, 0, 0.82);
         text-shadow: rgb(46, 142, 222) 2px 2px;
     }
+&__icons{
+    text-align: center;
+    transform: translate3d(0, -300%, 0);
+    transition: all .35s .25s ease;
+}
     &:hover {
         .tile__title {
-            transform: translate3d(0, -50%, 0);
-            
+            transform: translate3d(0, -120%, 0); 
+        }
+        .tile__icons {
+            transform: translate3d(0, -20%, 0); 
         }
         &::before {
             opacity: 0.25;

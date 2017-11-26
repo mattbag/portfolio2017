@@ -37,22 +37,22 @@ class Tile extends React.Component {
     // console.log(this.props.project.node);
     const _post = this.props.project || false
     const _p = _post.node
-    // console.log(this.props.project)
+    // console.log(_p)
     let tileInner;
     if (!_post) {
       tileInner = (
-        <span style={{position:`absolute`, top:0, left:0, right:0}}>
+        <span style={{ position: `absolute`, top: 0, left: 0, right: 0 }}>
           <img src={wf} alt={`Coming Soon`}
             style={{ transform: this.state.lv1 }} />
           <img src={wf} alt={`Coming Soon`}
-            style={{ transform: this.state.lv2 , opacity: `.9` }} />
+            style={{ transform: this.state.lv2, opacity: `.9` }} />
           <img src={oo} alt={`Coming Soon`}
-            style={{ transform: this.state.lv3,opacity: `.7` }} />
+            style={{ transform: this.state.lv3, opacity: `.7` }} />
           <div className="tile__title">{`Coming Soon`}</div>
         </span>
       )
-    }else{
-       tileInner = (
+    } else {
+      tileInner = (
         <span>
           <img src={_p.heroImage.resize.src} alt={_p.projectName}
             style={{ transform: this.state.lv1 }} />
@@ -60,6 +60,17 @@ class Tile extends React.Component {
             style={{ transform: this.state.lv2 }} />
           <img src={wf} alt={_p.projectName}
             style={{ transform: this.state.lv3, opacity: .7 }} />
+          {_p.category &&
+            <ul className="tile__icons" style={{
+              display: `flex`,
+              listStyleType: `none`,
+              justifyContent:`center`,
+              margin: 0
+            }}>
+            {_p.category.map(_ => <li key={_.title.title}><img width="10" src={_.icon.file.url} alt={_.title.title} style={{width: 20}} /></li>)}
+            </ul>
+            || <div style={{paddingTop: 15}}></div>
+          }
           <div className="tile__title">{_p.projectName}</div>
         </span>
       )
@@ -72,17 +83,17 @@ class Tile extends React.Component {
           {tileInner}
         </a>
       )
-    } else if(_p) {
-        const slug = _p.projectName.toString().replace(' ', '').toLowerCase()
-        link = (
-          <Link to={`/projects/${slug}`} style={{
-            boxShadow: 'none'
-          }}>
-            {tileInner}
-          </Link>
-        )
+    } else if (_p) {
+      const slug = _p.projectName.toString().replace(' ', '').toLowerCase()
+      link = (
+        <Link to={`/projects/${slug}`} style={{
+          boxShadow: 'none'
+        }}>
+          {tileInner}
+        </Link>
+      )
     } else {
-     link = tileInner
+      link = tileInner
     }
     return (
 
