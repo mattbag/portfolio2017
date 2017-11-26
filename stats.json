@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-106b67ef9d37b0a469a1.js",
-      "component---src-pages-index-js-106b67ef9d37b0a469a1.js.map"
+      "component---src-pages-index-js-77fafcf7413b91d2c16d.js",
+      "component---src-pages-index-js-77fafcf7413b91d2c16d.js.map"
     ],
     "path---projects-nothotdog": [
       "path---projects-nothotdog-6e4c528b26be0eca54d0.js",
@@ -21,8 +21,8 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-project-js": [
-      "component---src-templates-project-js-16d3bda2d434f910804b.js",
-      "component---src-templates-project-js-16d3bda2d434f910804b.js.map"
+      "component---src-templates-project-js-75f8bcc8b9af53030ea0.js",
+      "component---src-templates-project-js-75f8bcc8b9af53030ea0.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-1b0f2e44941369482c8e.js",
@@ -33,17 +33,17 @@
       "path---projects-aviato-fc3f6567d293ffb9db10.js.map"
     ],
     "path---index": [
-      "path---index-1fbc95bc39655fa71376.js",
-      "path---index-1fbc95bc39655fa71376.js.map"
+      "path---index-35eecf2f020d644e337a.js",
+      "path---index-35eecf2f020d644e337a.js.map"
     ],
     "path---projects-piedpiper": [
       "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js",
       "path---projects-piedpiper-5ce2cf60bc1e3d8fd2ff.js.map"
     ],
     "commons": [
-      "commons-c98b01152894ae2b67c3.js",
+      "commons-c827a3b5f622eb2f5688.js",
       "build-js-styles.css",
-      "commons-c98b01152894ae2b67c3.js.map",
+      "commons-c827a3b5f622eb2f5688.js.map",
       "build-js-styles.css.map"
     ],
     "path---projects-nipalert": [
