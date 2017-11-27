@@ -14,7 +14,12 @@ const Header = (props) =>{
              
                 <Bio />
       
-              <h1 style={{color: `#fff`, textShadow: `rgb(46, 142, 222) 2px 2px`, fontSize: `4vw`}}>
+              <h1 style={{
+                color: `#fff`, 
+                textShadow: `rgb(46, 142, 222) 2px 2px`, 
+                fontSize: `4vw`,
+                fontDisplay: `swap`
+                }}>
                 {props.text}
               </h1>
             </header>
