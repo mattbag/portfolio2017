@@ -60,6 +60,7 @@ class Tile extends React.Component {
             style={{ transform: this.state.lv2 }} />
           <img src={wf} alt={_p.projectName}
             style={{ transform: this.state.lv3, opacity: .7 }} />
+              <div className="tile__title">{_p.projectName}</div>
           {_p.category &&
             <ul className="tile__icons" style={{
               display: `flex`,
@@ -69,9 +70,8 @@ class Tile extends React.Component {
             }}>
             {_p.category.map(_ => <li key={_.title.title}><img width="10" src={_.icon.file.url} alt={_.title.title} style={{width: 20}} /></li>)}
             </ul>
-            || <div style={{paddingTop: 15}}></div>
+            // || <div style={{paddingTop: 15}}></div>
           }
-          <div className="tile__title">{_p.projectName}</div>
         </span>
       )
     }

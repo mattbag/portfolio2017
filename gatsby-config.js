@@ -1,6 +1,6 @@
 module.exports = {
-  // pathPrefix: `/portfolio2017`,
-  pathPrefix: `/`,
+  pathPrefix: `/portfolio2017`,
+  // pathPrefix: `/`,
   siteMetadata: {
     title: `Matt Bagni`,
     description: `a Progressive Front-end dev`
