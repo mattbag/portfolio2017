@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
     // console.log(this.props.data);
     // console.log('------------------------------------');
     const projects = this.props.data.allContentfulProject.edges
-    let dummy = projects.length < 10 ? 9 : 6
+    let dummy = 9
 
     return (
       <div>
