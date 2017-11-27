@@ -41,13 +41,15 @@ class Tile extends React.Component {
     let tileInner;
     if (!_post) {
       tileInner = (
-        <span style={{ position: `absolute`, top: 0, left: 0, right: 0 }}>
+        <span style={{ 
+          // position: `absolute`, top: 0, left: 0, right: 0
+           }}>
           <img src={wf} alt={`Coming Soon`}
             style={{ transform: this.state.lv1 }} />
           <img src={wf} alt={`Coming Soon`}
             style={{ transform: this.state.lv2, opacity: `.9` }} />
           <img src={oo} alt={`Coming Soon`}
-            style={{ transform: this.state.lv3, opacity: `.7` }} />
+            style={{ transform: this.state.lv3, opacity: `.9` }} />
           <div className="tile__title">{`Coming Soon`}</div>
         </span>
       )
