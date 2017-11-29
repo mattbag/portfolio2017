@@ -1,0 +1,13 @@
+.bang {
+    transform-origin: 50%;
+    transform: scale(5);
+    animation: bang 1s .5s forwards 1;
+    opacity: 0;
+}
+
+@keyframes bang {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

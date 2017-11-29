@@ -13,7 +13,8 @@ class Social extends React.Component {
             color: '#fff',
             textShadow: `1px 1px #1988cc`,
             padding: `.5vmin`,
-            textDecoration: `none`
+            textDecoration: `none`,
+            cursor: `alias`
         }
 
         return (
