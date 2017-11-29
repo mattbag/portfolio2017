@@ -77,7 +77,7 @@
         @include fp(font-size, 16, 30); 
         text-shadow: rgb(46, 142, 222) 2px 2px;
         @media screen and (min-width: 1200px) {
-            transform: translate3d(0, -300%, 0);
+            transform: translateY(-300%);
         }
     }
     &__icons {
@@ -91,15 +91,17 @@
         transition: all .35s .25s ease;
         transform: translate3d(0, 50%, 0);
         @media screen and (min-width: 1200px) {
-            transform: translate3d(0, -300%, 0);
+            transform: translateY(-300%);
         }
     }
     &:hover {
         .tile__title {
-            transform: translate3d(0, -100%, 0);
+            // transform: translate3d(0, -100%, 0);
+            transform: translateY(-100%);
         }
+        
         .tile__icons {
-            transform: translate3d(0, -10%, 0);
+            transform: translateY(-10%);
         }
         &::before {
             opacity: 0.25;
