@@ -41,7 +41,7 @@ class Tile extends React.Component {
     let tileInner;
     if (!_post) {
       tileInner = (
-        <span style={{ 
+        <span style={{ cursor: `wait`
           // position: `absolute`, top: 0, left: 0, right: 0
            }}>
           <img src={wf} alt={`Coming Soon`}
@@ -89,7 +89,7 @@ class Tile extends React.Component {
       const slug = _p.projectName.toString().replace(' ', '').toLowerCase()
       link = (
         <Link to={`/projects/${slug}`} style={{
-          boxShadow: 'none'
+          boxShadow: 'none', cursor: 'pointer'
         }}>
           {tileInner}
         </Link>
