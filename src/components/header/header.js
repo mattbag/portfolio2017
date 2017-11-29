@@ -16,7 +16,7 @@ const Header = (props) =>{
       
               <h1 style={{
                 color: `#fff`, 
-                textShadow: `rgb(46, 142, 222) 2px 2px`, 
+                textShadow: `rgb(46, 142, 222) 3px 3px`, 
                 fontSize: `4vw`,
                 fontDisplay: `swap`
                 }}>

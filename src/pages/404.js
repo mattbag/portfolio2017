@@ -16,7 +16,7 @@ class Page404 extends React.Component {
             textAlign: `center`,
         }
         return (
-            <div style={{ padding: `10vh`, textAlign: `center` }}>
+            <div style={{ padding: `6vmin`, textAlign: `center` }}>
                 <Helmet title={`4😱4 - Matt Bagni`} />
 
                 <Link to="/" style={{ textDecoration: `none` }}>
@@ -25,8 +25,8 @@ class Page404 extends React.Component {
                         <div style={{
                             display: `flex`,
                             justifyContent: `center`,
-                            marginTop: `-27vh`,
-                            marginBottom: `27vh`
+                            marginTop: `-20vmin`,
+                            marginBottom: `20vh`
                         }}>
                             <h2 style={four}>4</h2>
                             <div style={{ width: _w }}></div>
