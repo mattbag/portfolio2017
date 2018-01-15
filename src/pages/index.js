@@ -2,7 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 import * as PropTypes from "prop-types"
 import { rhythm } from "../utils/typography"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import Helmet from "react-helmet";
 import './grid.scss'
 import Tile from "./../components/tile/Tile";
@@ -81,6 +81,9 @@ class IndexPage extends React.Component {
   }
 
   render() {
+    console.log('------------------------------------');
+    console.log('render alert');
+    console.log('------------------------------------');
     // console.log('------------------------------------');
     // console.log(this.props.data);
     // console.log('------------------------------------');
@@ -140,9 +143,9 @@ export const pageQuery = graphql`
                 url
               }
             }
-                title {
-                  title
-                }
+            title {
+              title
+            }
           }
         }
       }

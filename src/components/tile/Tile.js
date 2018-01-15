@@ -41,9 +41,7 @@ class Tile extends React.Component {
     let tileInner;
     if (!_post) {
       tileInner = (
-        <span style={{ cursor: `wait`
-          // position: `absolute`, top: 0, left: 0, right: 0
-           }}>
+        <span style={{ cursor: `wait`}}>
           <img src={wf} alt={`Coming Soon`}
             style={{ transform: this.state.lv1 }} />
           <img src={wf} alt={`Coming Soon`}
