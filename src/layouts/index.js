@@ -25,9 +25,10 @@ class DefaultLayout extends React.Component {
         style={{
           margin: `0 auto`,
           maxWidth: `90%`,
-          paddingLeft: rhythm(3 / 4),
-          paddingRight: rhythm(3 / 4),
-          paddingTop: rhythm(3 / 4)
+          // paddingLeft: rhythm(3 / 4),
+          // paddingRight: rhythm(3 / 4),
+          // paddingTop: rhythm(3 / 4),
+          padding: rhythm(1),
         }}
       >
         <Header text={headerText} />

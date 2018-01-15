@@ -22,19 +22,19 @@ class ProjectTemplate extends React.Component {
     } = project
 
     let _renderCats;
-
+    const shadow = `rgba(2, 25, 39, 0.7) 4px 4px 20px 1px`;
 
 
     return (
       <div style={{
         backgroundColor: '#222',
-        boxShadow: 'rgba(0, 153, 246, 0.7) 0px 0px 0px 0.5px',
+        boxShadow: shadow,
         paddingTop: rhythm(1.5),
-        marginBottom: rhythm(1.5)
+        // marginBottom: rhythm(1.5)
       }}>
 
         <Helmet title={`${projectName} 👨🏼‍💻 Matt Bagni`} />
-        <div style={{ transform: `scale(1.05)`,boxShadow: 'rgba(0, 153, 246, 0.7) 0px 0px 0px 0.5px' }} >
+        <div style={{ transform: `scale(1.05)`, boxShadow: shadow }} >
           <Img sizes={heroImage.sizes} />
         </div>
         <div style={{ padding: rhythm(1), marginTop: `-2rem`, }}>
@@ -53,15 +53,15 @@ class ProjectTemplate extends React.Component {
               margin: 0
             }}>
               {category.map(_ => <li key={_.title.title}><img width="30" src={_.icon.file.url} alt={_.title.title} /></li>)}
-          </ul>
-         || <br/> }
+            </ul>
+            || <br />}
 
           {projectCopy &&
             <div dangerouslySetInnerHTML={{
               __html: projectCopy.childMarkdownRemark.html,
             }}
             />
-            }
+          }
         </div>
         <hr style={{ width: `30%`, margin: `1rem auto`, background: `#fff` }} />
         <Bio bio={false} social={true} />
